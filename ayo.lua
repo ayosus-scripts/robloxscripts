@@ -11,7 +11,7 @@ local RunService = game:GetService("RunService")
 local player = Players.LocalPlayer
 
 local settings = {
-    size       = 5, -- boob diameter
+    size       = 1.5, -- boob diameter
     protrusion = 1, -- how far forward from torso surface
     jiggliness = 1,
 }
