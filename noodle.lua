@@ -15,7 +15,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 local settings = {
     length        = 1.2,
     jiggliness    = 0.5,
-    shaftDiameter = 0.55,
+    shaftDiameter = 0.75,
     peeEnabled    = false,
     peeColor      = Color3.fromRGB(255, 255, 0), -- yellow
 }
@@ -25,7 +25,7 @@ local restC0 = CFrame.new()
 local theta, omega = Vector2.new(0, 0), Vector2.new(0, 0)
 local rootPart  = nil
 local peeAccum  = 0
-local PEE_RATE  = 30
+local PEE_RATE  = 70
 
 local function jiggleParams()
     local j = math.clamp(settings.jiggliness, 0, 1)
@@ -96,7 +96,7 @@ local function build(character: Model)
         local ball = Instance.new("Part")
         ball.Name = "Ball" .. i; ball.Shape = Enum.PartType.Ball
         ball.Size = Vector3.new(spec[2], spec[2], spec[2])
-        ball.Color = torsoColor; ball.Material = torsoMaterial
+        ball.Color = torsoColor; ball.Material = SmoothPlastic
         ball.CanCollide = false; ball.CanQuery = false
         ball.CanTouch = false; ball.Massless = true
         ball.CFrame = pivot.CFrame * CFrame.new(spec[1])
