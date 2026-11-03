@@ -13,7 +13,7 @@ local player    = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local settings = {
-    length        = 1.2,
+    length        = 1.7,
     jiggliness    = 0.5,
     shaftDiameter = 0.75,
     peeEnabled    = false,
